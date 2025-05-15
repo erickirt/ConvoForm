@@ -249,6 +249,10 @@ importers:
         version: 5.8.3
 
   apps/websocket-server:
+    dependencies:
+      bun:
+        specifier: 1.2.10
+        version: 1.2.10
     devDependencies:
       '@types/bun':
         specifier: latest
@@ -1739,6 +1743,61 @@ packages:
     resolution: {integrity: sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg==}
     engines: {node: '>=8.0.0'}
 
+  '@oven/bun-darwin-aarch64@1.2.10':
+    resolution: {integrity: sha512-pEpjQ9JrMMpBZywrZo/+M5ygfnYLCvQLIQWNRaukmd+9oNxHg28kvSLwD8zvYS/us8eAgeCXEwW05MAmHytlJA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@oven/bun-darwin-x64-baseline@1.2.10':
+    resolution: {integrity: sha512-RYtPL9JxxxEmLpoPidh26jgQgjM1WcK6BeCfJdp/HQcJ8mzvWqO4pOcAyYBf9v5Xsfl1pd1g7nakt8vcR7irPg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@oven/bun-darwin-x64@1.2.10':
+    resolution: {integrity: sha512-xNQ+rpIaa/qvaB6k+BsvQ0CTIG0HUTgrg1NlgUTY6dxn7IHqj2YZxHtvTi6/d2Tsy1kq/0QAKXQcD9gFofcgMw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@oven/bun-linux-aarch64-musl@1.2.10':
+    resolution: {integrity: sha512-YFSSLdeBjoztJQ4/fiInBkj/9Uh4QLdrgEO1IYZXKs146+6B/IC1S912IhyhSI1dbZAEukUCPS+1h6tILhLwHQ==}
+    cpu: [aarch64]
+    os: [linux]
+
+  '@oven/bun-linux-aarch64@1.2.10':
+    resolution: {integrity: sha512-tFDLXmaw7R3QQcRdIVUO0cxKFvBgqxS6mMr8huaEEPpeq2jop4Ti29BRlL9+K42RE8QvrLwz0cV2vgAFUz6hRw==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oven/bun-linux-x64-baseline@1.2.10':
+    resolution: {integrity: sha512-TlFNRDCRkKySsOHolBx/urWvldcIBQHkMpZH+YrJIPX5m8c1tyGmhT79s3GKT+n/bCxMPJXdxquJcXn+o2dNgg==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oven/bun-linux-x64-musl-baseline@1.2.10':
+    resolution: {integrity: sha512-vLBefuSZVHvtwhega+U1bITLr2kmnzF2PjQiM3H/bxmT3Ltp+ZSNnx30tU9Ot+kRFqd48a6rFJz2r+encQTDMw==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oven/bun-linux-x64-musl@1.2.10':
+    resolution: {integrity: sha512-QuIoz1J0FvbdkkERRNdTPmRiT7PFVtC/UKxVjVaAvppsQkkBw0r18JovCJjwR8d7SiR8L8ouaKQpAtLBG/e6FQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oven/bun-linux-x64@1.2.10':
+    resolution: {integrity: sha512-90WdCFqQIVTCtcqm92PhtFi0qY56675Iccx5mw8d7fH//ZEmj6z29sfU9CrDR1KN7gqJg8FOyiKeI2lVa/dFjA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oven/bun-windows-x64-baseline@1.2.10':
+    resolution: {integrity: sha512-0wFKLOkNu+bv4gF+ipL32aAJSnV2/XM9cebBD8ZSptPDL86GL87HUkIY4aLzuiLVRCYHXw3bYs1n0ju/9MBKlw==}
+    cpu: [x64]
+    os: [win32]
+
+  '@oven/bun-windows-x64@1.2.10':
+    resolution: {integrity: sha512-jLo8HCPqlaj1O4P6LJkRZ91gZhSZRPQKWQ0A8g4ysxxXRhuXdpMyeIEqMYzRLCNFwOfhPIl6oVkNDATJ2behAQ==}
+    cpu: [x64]
+    os: [win32]
+
   '@paralleldrive/cuid2@2.2.2':
     resolution: {integrity: sha512-ZOBkgDwEdoYVlSeRbYYXs0S9MejQofiVYoTbKzy/6GQa39/q5tQU2IX46+shYnUkpEl3wc+J6wRlar7r2EK2xA==}
 
@@ -3127,6 +3186,12 @@ packages:
 
   bun-types@1.2.13:
     resolution: {integrity: sha512-rRjA1T6n7wto4gxhAO/ErZEtOXyEZEmnIHQfl0Dt1QQSB4QV0iP6BZ9/YB5fZaHFQ2dwHFrmPaRQ9GGMX01k9Q==}
+
+  bun@1.2.10:
+    resolution: {integrity: sha512-7KZgjyJQh/nJaU8av0/2Ld9jDPdrVmQb/gAQKuhr796pKLSONJw+mbshme78viR9jbL4q+sgLNW6HOLwYhL0rg==}
+    cpu: [arm64, x64, aarch64]
+    os: [darwin, linux, win32]
+    hasBin: true
 
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
@@ -7175,6 +7240,39 @@ snapshots:
 
   '@opentelemetry/api@1.9.0': {}
 
+  '@oven/bun-darwin-aarch64@1.2.10':
+    optional: true
+
+  '@oven/bun-darwin-x64-baseline@1.2.10':
+    optional: true
+
+  '@oven/bun-darwin-x64@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-aarch64-musl@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-aarch64@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-x64-baseline@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-x64-musl-baseline@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-x64-musl@1.2.10':
+    optional: true
+
+  '@oven/bun-linux-x64@1.2.10':
+    optional: true
+
+  '@oven/bun-windows-x64-baseline@1.2.10':
+    optional: true
+
+  '@oven/bun-windows-x64@1.2.10':
+    optional: true
+
   '@paralleldrive/cuid2@2.2.2':
     dependencies:
       '@noble/hashes': 1.7.2
@@ -8590,6 +8688,20 @@ snapshots:
   bun-types@1.2.13:
     dependencies:
       '@types/node': 22.14.1
+
+  bun@1.2.10:
+    optionalDependencies:
+      '@oven/bun-darwin-aarch64': 1.2.10
+      '@oven/bun-darwin-x64': 1.2.10
+      '@oven/bun-darwin-x64-baseline': 1.2.10
+      '@oven/bun-linux-aarch64': 1.2.10
+      '@oven/bun-linux-aarch64-musl': 1.2.10
+      '@oven/bun-linux-x64': 1.2.10
+      '@oven/bun-linux-x64-baseline': 1.2.10
+      '@oven/bun-linux-x64-musl': 1.2.10
+      '@oven/bun-linux-x64-musl-baseline': 1.2.10
+      '@oven/bun-windows-x64': 1.2.10
+      '@oven/bun-windows-x64-baseline': 1.2.10
 
   bundle-name@4.1.0:
     dependencies:
